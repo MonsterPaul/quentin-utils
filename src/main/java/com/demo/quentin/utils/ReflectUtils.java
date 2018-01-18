@@ -15,6 +15,18 @@ public class ReflectUtils {
 
     /**
      * 获取成员变量的修饰符
+     * PUBLIC: 1
+     * PRIVATE: 2
+     * PROTECTED: 4
+     * STATIC: 8
+     * FINAL: 16
+     * SYNCHRONIZED: 32
+     * VOLATILE: 64
+     * TRANSIENT: 128
+     * NATIVE: 256
+     * INTERFACE: 512
+     * ABSTRACT: 1024
+     * STRICT: 2048
      *
      * @param clazz
      * @param field
@@ -36,6 +48,18 @@ public class ReflectUtils {
 
     /**
      * 获取成员方法的修饰符
+     * PUBLIC: 1
+     * PRIVATE: 2
+     * PROTECTED: 4
+     * STATIC: 8
+     * FINAL: 16
+     * SYNCHRONIZED: 32
+     * VOLATILE: 64
+     * TRANSIENT: 128
+     * NATIVE: 256
+     * INTERFACE: 512
+     * ABSTRACT: 1024
+     * STRICT: 2048
      *
      * @param clazz
      * @param method
@@ -49,11 +73,11 @@ public class ReflectUtils {
         Method[] m = clazz.getDeclaredMethods();
 
         for (int i = 0; i < m.length; i++) {
-            if (m[i].getName().equals(m)) {
+            if (m[i].getName().equals(method)) {
                 return m[i].getModifiers();
             }
         }
-        throw new Exception(clazz + " has no method \"" + m + "\"");
+        throw new Exception(clazz + " has no method \"" + method + "\"");
     }
 
     /**

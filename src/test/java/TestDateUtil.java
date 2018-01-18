@@ -20,7 +20,7 @@ public class TestDateUtil {
         cal.add(Calendar.MONTH, 1);
         System.out.println(new SimpleDateFormat("yyyy-MM-dd").format(cal.getTime()));
         try {
-            System.out.println(DateUtils.getDiff(d, cal.getTime(), DateUtils.Type.Week));
+            System.out.println(DateUtils.getDiff(d, cal.getTime(), DateUtils.Type.Day));
         } catch (Exception e) {
             e.printStackTrace();
         }

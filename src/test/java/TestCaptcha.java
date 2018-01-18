@@ -21,9 +21,9 @@ public class TestCaptcha {
         for(int i=0;i<10;i++){
             Object[] obj=getCaptchaImage(150, 50, 35, 50, 500, true,true, CaptchaUtils.ComplexLevel.MEDIUM);
             System.out.println("验证码"+obj[1]);
-            new File("C:\\test").mkdir();
+            new File("D:\\quentinCaptcha").mkdir();
             try {
-                ImageIO.write((BufferedImage)obj[0],"jpg",new File("C:\\test\\"+System.currentTimeMillis()+".jpg"));
+                ImageIO.write((BufferedImage)obj[0],"jpg",new File("D:\\quentinCaptcha\\"+System.currentTimeMillis()+".jpg"));
             } catch (IOException e) {
                 e.printStackTrace();
             }
