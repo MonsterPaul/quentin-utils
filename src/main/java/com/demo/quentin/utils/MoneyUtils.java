@@ -6,7 +6,7 @@ import java.math.RoundingMode;
 /**
  * 金钱处理工具类
  *
- * @Auth Created by 杨国群
+ * @Auth Created by guoqun.yang
  * @Date Created in 11:22 2017/11/13
  * @Version 1.0
  */

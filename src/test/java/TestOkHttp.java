@@ -1,5 +1,4 @@
-package com.demo.quentin.utils;
-
+import com.demo.quentin.utils.HttpUtils;
 import okhttp3.CacheControl;
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -15,14 +14,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @Auth Created by 杨国群
- * @Date Created in 13:26 2017/11/13
+ * @Auth Created by guoqun.yang
+ * @Date Created in 13:23 2018/1/18
  * @Version 1.0
  */
-public class Test {
-    private static final Logger logger = LoggerFactory.getLogger(Test.class);
+public class TestOkHttp {
 
-    public static void main(String[] args) {
+    private static final Logger logger = LoggerFactory.getLogger(TestOkHttp.class);
+
+    @org.junit.Test
+    public void testInvokeOkHttp() {
         //请求地址
         String url = "http://localhost:8083/ane-job/100411.bizservice";
         //请求头
@@ -54,6 +55,4 @@ public class Test {
 
         HttpUtils.getInstance().asyncPostFormRequest(url,headerMap,paramMap,cacheControl,callback,"");
     }
-
-
 }

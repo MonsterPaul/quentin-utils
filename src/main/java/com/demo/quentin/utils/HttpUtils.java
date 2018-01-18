@@ -10,10 +10,11 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author 何凯
- * @version 0.1
- * @time 2017/3/29 23:39
- * @since 0.1
+ * OKHTTP工具类
+ *
+ * @Auth Created by guoqun.yang
+ * @Date Created in 11:22 2017/11/13
+ * @Version 1.0
  */
 public class HttpUtils {
 
