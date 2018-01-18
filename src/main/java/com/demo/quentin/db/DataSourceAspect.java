@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import java.lang.reflect.Method;
 
 /**
+ * aop动态设置数据源对象
  * @Auth Created by guoqun.yang
  * @Date Created in 11:18 2017/12/19
  * @Version 1.0

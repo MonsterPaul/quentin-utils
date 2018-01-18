@@ -3,6 +3,7 @@ package com.demo.quentin.db;
 import java.lang.annotation.*;
 
 /**
+ * 自定义数据源类型注解
  * @Auth Created by guoqun.yang
  * @Date Created in 11:29 2017/12/19
  * @Version 1.0

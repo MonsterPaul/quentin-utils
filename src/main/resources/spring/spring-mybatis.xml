@@ -65,6 +65,7 @@
         <property name="testWhileIdle" value="true"/>
     </bean>
 
+    <!--设置数据源-->
     <bean id="dataSource" class="com.demo.quentin.db.DataSourceRouter">
         <property name="defaultTargetDataSource" ref="dataSource1"/>
         <property name="targetDataSources">
