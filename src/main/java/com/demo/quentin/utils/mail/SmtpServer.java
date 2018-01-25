@@ -67,4 +67,13 @@ public interface SmtpServer {
         }
     };
 
+    Map<String, String> SMTP_QQ = new HashMap<String, String>() {
+        {
+
+            put("smtp", "smtp.qq.com");
+            put("port", "25");
+
+        }
+    };
+
 }
